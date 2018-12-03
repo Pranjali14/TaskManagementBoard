@@ -1,0 +1,10 @@
+<div class="list">
+  <input type="text" *ngIf="showTextArea" 
+  class="card"
+  [(ngModel)]="listTitle" placeholder="Enter list title"/>
+  <div (click)="showTextArea=true;" *ngIf="!showTextArea">+ Add Another List</div>
+  <div *ngIf="showTextArea" class="mt2">
+    <button class="primary-button" (click)="addNewList()">Add List</button>
+    <span class="close" (click)="showTextArea=false; text=''"></span>
+  </div>
+</div>

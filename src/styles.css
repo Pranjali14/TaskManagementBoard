@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.mt1 {
+    margin-top: 5px;
+}
+
+.pt1 {
+    padding-top: 5px; 
+}
+
+.mt2 {
+    margin-top: 10px;
+}
+
+.primary-button {
+    background-color: #5aac44;
+    box-shadow: 0 1px 0 0 #3f6f21;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 1em;
+    padding:.3em .6em;
+    cursor: pointer;
+}
+
+.secondary-button {
+    color: #798d99;
+    font-size: 1em;
+    padding:.3em .6em;
+    cursor: pointer;
+}
+
+.close {
+    margin-left: 5px;
+    cursor: pointer;
+}
+.close::before, .close::after{
+    content: '';
+    border-top: 2px solid #798d99;
+    width: 15px;
+    display: inline-block;  
+    position: absolute;
+    margin-top: 15px; 
+}
+
+.close::before {
+    transform: rotate(45deg); 
+}
+
+.close::after {
+    transform: rotate(-45deg); 
+}

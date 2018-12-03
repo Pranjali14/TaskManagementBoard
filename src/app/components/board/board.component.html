@@ -1,0 +1,12 @@
+<h1>Task Manager</h1>
+<div class="board">
+  <!-- <app-state *ngFor="let item of items;" [data]="item"></app-state> -->
+  <div class="list" appDrop   *ngFor="let data of items;let i=index" 
+  (onDrop)="pushItem($event, i)">
+    <p class="primary">{{data.listTitle}}</p>
+    <app-card class="list-item" *ngFor="let item of data.list;" 
+    [data]="item" [type]='data.listId'></app-card>
+    <app-add-card (addListItem)="addListItem($event, i)"></app-add-card>
+  </div>
+  <app-add-list (addList)="addList($event)"></app-add-list>
+</div>

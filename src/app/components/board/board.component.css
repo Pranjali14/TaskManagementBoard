@@ -1,0 +1,40 @@
+.board {
+    display: flex;
+    align-items: flex-start;
+    padding:20px 0px;
+    background-color: #00aecc;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+h1{
+    color: #ceeaef;
+    background-color: #2094ae;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.drop {
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+}
+
+.primary {
+    color: #606062;
+}
+.secondary {
+    color: #b1b1b3;
+}
+.list {
+    background: #e9e9eb;
+    display: inline-block;
+    margin-left: 1em;
+    padding: 10px;
+    max-width: 400px;
+    border-radius:5px;
+    min-width: 250px;
+    overflow: auto;
+    max-height: 100%;
+}

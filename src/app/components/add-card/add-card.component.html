@@ -1,0 +1,7 @@
+<textarea class="card mt2" *ngIf="showTextArea"  [(ngModel)]="text"></textarea>
+<p class="secondary mt1 pt1" *ngIf="!showTextArea" 
+(click)="showTextArea=true;"> + Add Card</p>
+<div class="mt1"  *ngIf="showTextArea">
+  <button class="primary-button" (click)="addCard()">Add Card</button>
+  <span class="close" (click)="showTextArea=false; text=''"></span>
+</div>

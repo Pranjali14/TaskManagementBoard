@@ -1,0 +1,22 @@
+.list {
+    background: #e9e9eb;
+    display: inline-block;
+    margin-left: 1em;
+    padding: 10px;
+    max-width: 400px;
+    border-radius:2px;
+    min-width: 250px;
+}
+
+.card {
+    box-shadow: 1px 1px 1px 1px #c5c5c7;
+    background: white;
+    max-width: 400px;
+    border-radius:2px;
+    padding: 3px;
+    min-width: 250px;
+    color: #3e3e3e;
+    border: 0px;
+    font-size: 14px;
+    padding: 10px 10px;
+}
